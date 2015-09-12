@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Анкета слушателя курсов </title>
+    </head>
+<body>
+<p><h1 ALIGN=CENTER>Анкета слушателя курса Java professional</h1>
+<p><h2>Заполните данные о себе и ответьте на несколько вопросов, пожалуйста</h2>
+    <form name ="anketa" action="/survey" method="POST">
+    <p>Ваше имя: <input type="text" name="name" required pattern="^[a-zA-Z]+$" placeholder="Введите имя, только латинские буквы"><br></p>
+    <p>Возраст:<input type="txt" name="age" required pattern="[1-9]{1,2}" placeholder="Введите корректный возраст"><br></p>
+    <p>Пол :</p>
+     Мужчина <input name="gender" type=RADIO VALUE="мужской" >
+     Женщина <input name="gender" type=RADIO VALUE="женский">
+<p>Укажите ваш опыт работы в сфере IT.</p>
+        <INPUT TYPE="radio" NAME="expert" VALUE="Нет опыта, или меньше года" >Нет опыта, или меньше года<BR>
+        <INPUT TYPE="radio" NAME="expert" VALUE="От 1 года до 3"> От 1 года до 3 <BR>
+        <INPUT TYPE="radio" NAME="expert" VALUE="От 3 года до 5"> От 3 года до 5 <BR>
+        <INPUT TYPE="radio" NAME="expert" VALUE="От 5 лет"> От 5 лет<BR>
+        <INPUT TYPE=SUBMIT><INPUT TYPE=RESET>
+    </form>
+</body>
+</html>
